@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital@0;1&display=swap');
+
+*{
+    background:#f0f0f0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    width: 40vh;
+    height: 80vh;
+    box-shadow: -1vh 1vh 2vh 0.05vh #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#profile{
+    align-self: center;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 100%;
+}
+
+#profile > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit:cover;
+}
+
+#name{
+    align-self: center;
+    margin-bottom: .5vh;
+    width: 90%;
+    height: 5%;
+    font-size: 3vh;
+    font-weight: 800;
+    text-align: center;
+}
+
+#title{
+    align-self: center;
+    width: 90%;
+    height: 5%;
+    font-size: 1.3vh;
+    font-weight: 700;
+    text-align: center;
+}
+
+#bubbles{
+    align-self: center;
+    width: 90%;
+    height: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+#bubble{
+    align-self: center;
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bubble > a > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spacer{
+    height: 5vh;
+}
+
+.spacer-2{
+    height:30vh;
+}
+
+#text{
+    align-self: center;
+    padding-top: 5%;
+    width: 90%;
+    height: 5%;
+    font-size: 2vh;
+    font-weight: 700;
+    justify-self: baseline;
+    text-align: center;
+}
+
+.intro{
+    opacity:0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    background: #001a4b;
+    top: 0;
+    left: 0;
+    width: 0vw;
+    height: 0vh;
+    animation: disolve 2s;
+    text-align: center;
+}
+
+.temp{
+    background: #002b7c;
+    border-radius: 5%;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    align-self: center;
+}
+
+@keyframes disolve{
+    0%{
+        opacity:100%;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    }
+    80%{
+        opacity:100%;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    }
+    100%{
+        opacity:0%;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    }
+}
