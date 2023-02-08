@@ -107,8 +107,8 @@ body{
     background: #001a4b;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 0vw;
+    height: 0vh;
     animation: disolve 2s;
     text-align: center;
 }
@@ -125,14 +125,20 @@ body{
 @keyframes disolve{
     0%{
         opacity:100%;
+        width: 100vw;
+        height: 100vh;
         z-index: 1;
     }
     80%{
         opacity:100%;
+        width: 100vw;
+        height: 100vh;
         z-index: 1;
     }
     100%{
         opacity:0%;
+        width: 100vw;
+        height: 100vh;
         z-index: 1;
     }
 }
