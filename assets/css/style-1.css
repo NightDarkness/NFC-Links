@@ -98,11 +98,38 @@ body{
     text-align: center;
 }
 
-@media (max-width: 1300) and (max-height: 2500px) {
+.intro{
+    opacity:0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    background: #001a4b;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    animation: disolve 2s;
+    text-align: center;
+}
 
-    .container{
-        width: 100vw;
-        height: 100vh;
+.temp{
+    background: #002b7c;
+    border-radius: 5%;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    align-self: center;
+}
+
+@keyframes disolve{
+    0%{
+        opacity:100%
     }
-
+    80%{
+        opacity:100%
+    }
+    100%{
+        opacity:0%
+    }
 }
