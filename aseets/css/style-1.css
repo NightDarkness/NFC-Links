@@ -50,7 +50,7 @@ body{
     align-self: center;
     width: 90%;
     height: 5%;
-    font-size: 1.2vh;
+    font-size: 1.3vh;
     font-weight: 700;
     text-align: center;
 }
@@ -79,11 +79,19 @@ body{
     object-fit: cover;
 }
 
+.spacer{
+    height: 5vh;
+}
+
+.spacer-2{
+    height:30vh;
+}
+
 #text{
     align-self: center;
     padding-top: 5%;
     width: 90%;
-    height: 40%;
+    height: 5%;
     font-size: 2vh;
     font-weight: 700;
     justify-self: baseline;
