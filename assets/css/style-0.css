@@ -6,6 +6,7 @@
 }
 
 body{
+    background-image: url();
     display:flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +42,7 @@ body{
     margin-bottom: .5vh;
     width: 90%;
     height: 5%;
-    font-size: 3vh;
+    font-size: 4vh;
     font-weight: 800;
     text-align: center;
 }
@@ -98,6 +99,17 @@ body{
     text-align: center;
 }
 
+#BG{
+    z-index: -1;
+    margin:0;
+    padding:0;
+    top:0;
+    left:0;
+    height: 100vh;
+    position: absolute;
+    animation: trans01 15s infinite;
+}
+
 .intro{
     opacity:0%;
     position: absolute;
@@ -142,3 +154,19 @@ body{
         z-index: 1;
     }
 }
+
+@keyframes trans01{
+    0%{
+        top:0;
+        left:0;
+    }
+    50%{
+        top:-50vh;
+        left:-25vw;
+    }
+    100%{
+        top:0;
+        left:0;
+    }
+}
+
