@@ -105,8 +105,13 @@ body{
     padding:0;
     top:0;
     left:0;
-    height: 300vh;
+    height: 100vh;
+    width: 100vw;
     position: absolute;
+}
+
+#BG > img{
+    height:300%;
 }
 
 .intro{
