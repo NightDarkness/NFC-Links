@@ -43,7 +43,6 @@ body{
     align-self: center;
     margin-bottom: .5vh;
     width: 90%;
-    height: 5%;
     font-size: 4vh;
     font-weight: 800;
     text-align: center;
@@ -60,6 +59,8 @@ body{
 
 #bubbles{
     align-self: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 90%;
     height: 7%;
     display: flex;
@@ -83,16 +84,17 @@ body{
 }
 
 .spacer{
-    height: 5vh;
+    height: 8%;
 }
 
 .spacer-2{
-    height:30vh;
+    height:30%;
 }
 
 #text{
     align-self: center;
-    padding-top: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 90%;
     height: 5%;
     font-size: 2vh;
