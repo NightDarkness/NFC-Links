@@ -105,9 +105,8 @@ body{
     padding:0;
     top:0;
     left:0;
-    height: 300%;
+    height: 300vh;
     position: absolute;
-    animation: trans01 15s infinite;
 }
 
 .intro{
