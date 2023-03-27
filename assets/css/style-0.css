@@ -109,7 +109,7 @@ video{
     padding:0;
     top:0;
     left:0;
-    height: 100vh;
+    height: 100svh;
     width: 100vw;
     position: absolute;
     object-fit: cover;
@@ -125,8 +125,8 @@ video{
     background: #001a4b;
     top: 0;
     left: 0;
-    width: 0vw;
-    height: 0vh;
+    width: 100svw;
+    height: 100svh;
     animation: disolve 2s;
     text-align: center;
 }
@@ -143,20 +143,14 @@ video{
 @keyframes disolve{
     0%{
         opacity:100%;
-        width: 100vw;
-        height: 100vh;
         z-index: 5;
     }
     80%{
         opacity:100%;
-        width: 100vw;
-        height: 100vh;
         z-index: 5;
     }
     100%{
         opacity:0%;
-        width: 100vw;
-        height: 100vh;
         z-index: 5;
     }
 }
