@@ -9,24 +9,29 @@
         "background": "none",
         "alias": "NightDarkness",
         "bubbles": {
-            "bubble_1" : {
+            "bubble_0" : {
                 "img": "telefono.png",
                 "data": "assets/id/@CKL8R/Alfonso-Lozano.vcf",
                 "alt": "Contacto",
                 "title": "Contacto"
             },
-            "bubble_2" : {
+            "bubble_1" : {
                 "img": "github.png",
                 "data": "https://github.com/NIghtDarkness",
                 "alt": "GitHub",
                 "title": "GitHub"
             },
-            "bubble_3" : {
+            "bubble_2" : {
                 "img": "simbolo-de-enlace.png",
                 "data": "https://dev.nightdarkness.com/",
                 "alt": "Website",
                 "title": "Website"
             }
+        },
+        "font-size": {
+            "name": "4vh",
+            "profession": "2.2vh",
+            "alias": "2vh"
         }
     }
 }

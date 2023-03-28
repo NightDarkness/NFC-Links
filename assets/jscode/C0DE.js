@@ -14,20 +14,22 @@ async function reload_content() {
             profile = document.querySelector("#profile > img"),
             name = document.querySelector("#name span"),
             profession = document.querySelector("#profession span"),
-            img1 = document.querySelector("#first img"),
-            img2 = document.querySelector("#second img"),
-            img3 = document.querySelector("#third img"),
-            link1 = document.querySelector("#first a"),
-            link2 = document.querySelector("#second a"),
-            link3 = document.querySelector("#third a"),
-            footer = document.querySelector("#text span")
-        
-    
+            img = new Array(
+                document.querySelector("#first img"),
+                document.querySelector("#second img"),
+                document.querySelector("#third img")
+            ),
+            link = new Array(
+                document.querySelector("#first a"),
+                document.querySelector("#second a"),
+                document.querySelector("#third a")
+            ),
+            footer = document.querySelector("#text span");
+                    
+
         let id = url_params.get("id");
         const response = await fetch("/assets/id/" + id + "/metainfo.json");
         let data = await response.json();
-
-        console.log(data);
 
         if(data[id]['video'] !== "none"){
             video.removeAttribute("class");
@@ -47,25 +49,19 @@ async function reload_content() {
         profile.setAttribute("title", data[id]['name'] + " " + data[id]['last_name']);
         
         name.innerHTML = data[id]['name'] + " " + data[id]['last_name'];
+        name.style.fontSize = data[id]['font-size']['name'];
         profession.innerText = data[id]['profession'];
-        
-        img1.setAttribute("src", "assets/img/" + data[id]['bubbles']['bubble_1']['img']);
-        img2.setAttribute("src", "assets/img/" + data[id]['bubbles']['bubble_2']['img']);
-        img3.setAttribute("src", "assets/img/" + data[id]['bubbles']['bubble_3']['img']);
-        
-        img1.setAttribute("alt", data[id]['bubbles']['bubble_1']['alt']);
-        img2.setAttribute("alt", data[id]['bubbles']['bubble_2']['alt']);
-        img3.setAttribute("alt", data[id]['bubbles']['bubble_3']['alt']);
-        
-        img1.setAttribute("title", data[id]['bubbles']['bubble_1']['title']);
-        img2.setAttribute("title", data[id]['bubbles']['bubble_2']['title']);
-        img3.setAttribute("title", data[id]['bubbles']['bubble_3']['title']);
+        profession.style.fontSize = data[id]['font-size']['profession'];
 
-        link1.setAttribute("href", data[id]['bubbles']['bubble_1']['data']);
-        link2.setAttribute("href", data[id]['bubbles']['bubble_2']['data']);
-        link3.setAttribute("href", data[id]['bubbles']['bubble_3']['data']);
+        for(let i = 0; i < 3; i++) {
+            img[i].setAttribute("src", "assets/img/" + data[id]['bubbles']['bubble_' + i.toString()]['img']);
+            img[i].setAttribute("alt", data[id]['bubbles']['bubble_' + i.toString()]['alt']);
+            img[i].setAttribute("title", data[id]['bubbles']['bubble_' + i.toString()]['title']);
+            link[i].setAttribute("href", data[id]['bubbles']['bubble_' + i.toString()]['data']);
+        }
 
         footer.innerText = data[id]['alias'];
+        footer.style.fontSize = data[id]['font-size']['alias'];
 
 }
 
