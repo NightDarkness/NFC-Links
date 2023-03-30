@@ -1,0 +1,37 @@
+{
+    "e2V]Vn": {
+
+        "style": "csstyle.css",
+        "name": "Lic. Angelica",
+        "last_name": "Piedra",
+        "profession": "Licenciada en Nutriologia",
+        "video": "none",
+        "background": "background.png",
+        "alias": "",
+        "bubbles": {
+            "bubble_0" : {
+                "img": "telefono.png",
+                "data": "assets/id/e2V]Vn/Angelica-Piedra.vcf",
+                "alt": "Contacto",
+                "title": "Contacto"
+            },
+            "bubble_1" : {
+                "img": "whatsapp.png",
+                "data": "https://wa.me/526561445508",
+                "alt": "WhatsApp",
+                "title": "WhatsApp"
+            },
+            "bubble_2" : {
+                "img": "sobre.png",
+                "data": "mailto:angelica.gnutrition@gmail.com",
+                "alt": "e-mail",
+                "title": "e-mail"
+            }
+        },
+        "font-size": {
+            "name": "3.5vh",
+            "profession": "2.2vh",
+            "alias": "2vh"
+        }
+    }
+}

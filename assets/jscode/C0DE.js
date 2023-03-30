@@ -38,7 +38,7 @@ async function reload_content() {
             video.load();
             video.play();
         }else if(data[id]['background'] !== "none"){
-            body.style.backgroundImage = "url(" + data[id]['background'] + ")";
+            body.style.backgroundImage = "url(assets/media/" + data[id]['background'] + ")";
         }
         
         style.setAttribute("href", "assets/css/" + data[id]['style']);

@@ -1,0 +1,37 @@
+{
+    "7FG~yc": {
+
+        "style": "csstyle.css",
+        "name": "Nayeli",
+        "last_name": "Vianey",
+        "profession": "Manicurista Independiente",
+        "video": "none",
+        "background": "none",
+        "alias": "Nayely's nails art.",
+        "bubbles": {
+            "bubble_0" : {
+                "img": "facebook.png",
+                "data": "https://www.facebook.com/NayelyArzabala",
+                "alt": "Facebook",
+                "title": "Facebook"
+            },
+            "bubble_1" : {
+                "img": "instagram.png",
+                "data": "https://www.instagram.com/arzabalavianey/?igshid=ZmZhODViOGI%3D",
+                "alt": "Instagram",
+                "title": "Instagram"
+            },
+            "bubble_2" : {
+                "img": "whatsapp.png",
+                "data": "https://wa.me/526565281678",
+                "alt": "WhatsApp",
+                "title": "WhatsApp"
+            }
+        },
+        "font-size": {
+            "name": "4vh",
+            "profession": "2.2vh",
+            "alias": "2vh"
+        }
+    }
+}
