@@ -14,22 +14,28 @@ async function reload_content() {
             profile = document.querySelector("#profile > img"),
             name = document.querySelector("#name span"),
             profession = document.querySelector("#profession span"),
+
             img = new Array(
                 document.querySelector("#first img"),
                 document.querySelector("#second img"),
                 document.querySelector("#third img")
             ),
+
             link = new Array(
                 document.querySelector("#first a"),
                 document.querySelector("#second a"),
                 document.querySelector("#third a")
             ),
-            footer = document.querySelector("#text span");
-                    
 
-        let id = url_params.get("id");
-        const response = await fetch("/assets/id/" + id + "/metainfo.json");
-        let data = await response.json();
+            footer = document.querySelector("#text span");
+
+        let id = url_params.get("id"),
+            data,
+            blur;
+
+        const response = await fetch("/assets/id/" + id + "/metainfo.json")
+
+        data = await response.json();
 
         if(data[id]['video'] !== "none"){
             video.removeAttribute("class");

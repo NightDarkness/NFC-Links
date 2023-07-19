@@ -1,0 +1,37 @@
+{
+    "@CKL8R": {
+
+        "style": "csstyle.css",
+        "name": "Alfonso",
+        "last_name": "Lozano",
+        "profession": "Front End Developer",
+        "video": "background-1.webm",
+        "background": "none",
+        "alias": "NightDarkness",
+        "bubbles": {
+            "bubble_0" : {
+                "img": "telefono.png",
+                "data": "assets/id/@CKL8R/Alfonso-Lozano.vcf",
+                "alt": "Contacto",
+                "title": "Contacto"
+            },
+            "bubble_1" : {
+                "img": "github.png",
+                "data": "https://github.com/NIghtDarkness",
+                "alt": "GitHub",
+                "title": "GitHub"
+            },
+            "bubble_2" : {
+                "img": "simbolo-de-enlace.png",
+                "data": "https://dev.nightdarkness.com/",
+                "alt": "Website",
+                "title": "Website"
+            }
+        },
+        "font-size": {
+            "name": "4vh",
+            "profession": "2.2vh",
+            "alias": "2vh"
+        }
+    }
+}
