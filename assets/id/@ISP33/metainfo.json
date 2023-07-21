@@ -4,28 +4,28 @@
         "style": "csstyle.css",
         "name": "Ivan",
         "last_name": "Serratos",
-        "profession": "Insurance Seller",
+        "profession": "Insurance agent",
         "video": "none",
         "background": "background.png",
-        "alias": "NightDarkness",
+        "alias": "",
         "bubbles": {
             "bubble_0" : {
                 "img": "telefono.png",
-                "data": "assets/id/@CKL8R/Alfonso-Lozano.vcf",
+                "data": "assets/id/@ISP33/Ivan-Serratos.vcf",
                 "alt": "Contacto",
                 "title": "Contacto"
             },
             "bubble_1" : {
-                "img": "github.png",
-                "data": "https://github.com/NIghtDarkness",
-                "alt": "GitHub",
-                "title": "GitHub"
+                "img": "instagram.png",
+                "data": "https://www.instagram.com/ivan.__.serratos",
+                "alt": "Instagram",
+                "title": "Instagram"
             },
             "bubble_2" : {
-                "img": "simbolo-de-enlace.png",
-                "data": "https://dev.nightdarkness.com/",
-                "alt": "Website",
-                "title": "Website"
+                "img": "sobre.png",
+                "data": "mailto:ivanserratos644@gmail.com",
+                "alt": "eMail",
+                "title": "eMail"
             }
         },
         "font-size": {
