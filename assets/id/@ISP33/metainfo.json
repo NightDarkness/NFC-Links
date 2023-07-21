@@ -5,8 +5,8 @@
         "name": "Ivan",
         "last_name": "Serratos",
         "profession": "Insurance agent",
-        "video": "none",
-        "background": "background.png",
+        "video": "vBG01.mp4",
+        "background": "none",
         "alias": "",
         "bubbles": {
             "bubble_0" : {
