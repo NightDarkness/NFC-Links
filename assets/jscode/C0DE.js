@@ -10,6 +10,7 @@ async function reload_content() {
             title = document.querySelector("title"),
             body = document.querySelector("body"),
             video = document.querySelector("video"),
+            cardBG = document.querySelector(".container"),
             vSource = document.querySelector("source"),
             profile = document.querySelector("#profile > img"),
             name = document.querySelector("#name span"),
@@ -49,6 +50,10 @@ async function reload_content() {
         
         style.setAttribute("href", "assets/css/" + data[id]['style']);
         title.innerText = data[id]['name'] + " " + data[id]['last_name'];
+
+        if(data[id]['texture'] !== "none"){
+            cardBG.style.backgroundImage = "url(assets/img/textures/" + data[id]['texture'] + ")";
+        }
 
         profile.setAttribute("src", "assets/id/" + id + "/profile.png");
         profile.setAttribute("alt", data[id]['name'] + " " + data[id]['last_name']);

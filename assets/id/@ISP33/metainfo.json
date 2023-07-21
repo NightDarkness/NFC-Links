@@ -7,6 +7,7 @@
         "profession": "Insurance agent",
         "video": "vBG01.mp4",
         "background": "none",
+        "texture": "none",
         "alias": "",
         "bubbles": {
             "bubble_0" : {
