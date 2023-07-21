@@ -32,6 +32,7 @@ body{
     align-self: center;
     flex-direction: column;
     justify-content: center;
+    border-radius: 1.5vh;
 }
 
 #profile{
