@@ -8,6 +8,7 @@
         "video": "vBG01.mp4",
         "background": "none",
         "texture": "none",
+        "QR": "True",
         "alias": "",
         "bubbles": {
             "bubble_0" : {

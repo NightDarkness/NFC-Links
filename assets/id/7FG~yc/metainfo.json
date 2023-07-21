@@ -8,6 +8,7 @@
         "video": "none",
         "background": "none",
         "texture": "none",
+        "QR": "False",
         "alias": "Nayely's nails art.",
         "bubbles": {
             "bubble_0" : {

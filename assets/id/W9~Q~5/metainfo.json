@@ -8,6 +8,7 @@
         "video": "none",
         "background": "none",
         "texture": "none",
+        "QR": "False",
         "alias": "Secretaria de Educacion del Estado de Chihuahua.",
         "bubbles": {
             "bubble_0" : {

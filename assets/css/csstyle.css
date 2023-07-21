@@ -91,12 +91,27 @@ body{
     object-fit: contain;
 }
 
+.QR-Cont{
+    align-self: center;
+    width: 20vh;
+    background-color: blue;
+}
+
+.QR-Cont > img{
+    width: 100%;
+    object-fit: fill;
+}
+
 .spacer{
     height: 8%;
 }
 
 .spacer-2{
     height:30%;
+}
+
+.spacer-3{
+    height:20%;
 }
 
 #text{

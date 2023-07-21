@@ -8,6 +8,7 @@
         "video": "none",
         "background": "background.png",
         "texture": "none",
+        "QR": "False",
         "alias": "",
         "bubbles": {
             "bubble_0" : {
