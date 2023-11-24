@@ -8,7 +8,7 @@
         "video": "background-1.webm",
         "background": "none",
         "texture": "none",
-        "QR": "True",
+        "QR": "False",
         "alias": "NightDarkness",
         "bubbles": {
             "bubble_0" : {

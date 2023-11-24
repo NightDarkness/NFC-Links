@@ -12,6 +12,7 @@ async function reload_content() {
             video = document.querySelector("video"),
             cardBG = document.querySelector(".container"),
             QR = document.querySelector(".QR"),
+            QR_cont = document.querySelector(".QR-Cont"),
             vSource = document.querySelector("source"),
             profile = document.querySelector("#profile > img"),
             name = document.querySelector("#name span"),
@@ -58,6 +59,7 @@ async function reload_content() {
 
         if(data[id]['QR'] == 'True'){
             QR.setAttribute("src", "assets/id/" + id + "/qr.png");
+            QR_cont.style.opacity = 1;
         }
 
         profile.setAttribute("src", "assets/id/" + id + "/profile.png");

@@ -95,6 +95,7 @@ body{
     align-self: center;
     width: 20vh;
     background-color: blue;
+    opacity: 0;
 }
 
 .QR-Cont > img{
